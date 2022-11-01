@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Vacina</title>
+    <link rel="stylesheet" href="Style/EditarVacinaStyle.css">
+    <link rel="shortcut icon" href="images/icon-vaccine.png" type="image/x-icon">
+    <script>
+        window.onload = () => {
+            document.getElementById("btnExcluir").addEventListener("click", () => {
+                document.getElementById("popUp").style.display = "flex"
+            })
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="Cabeçalho">
+        <div>
+            <a class="logo-imagem"><img src="images/icon-vaccine.png" alt=""></a>
+            <span>My Health</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a class="btn" href="Home.html">Minhas vacinas</a></li>
+                <li><a class="btn" href="Index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="btnExcluir" class="botaoExcluir">
+            <a class="btn-excluir"> <img src="images/trash.png"> Excluir</a>
+        </div>
+        <form>
+            <div class="campo">
+                <label class="campo-texto" for="data">Data de vascinação</label>
+                <input class="input-data" type="date" name="data">
+            </div>
+
+
+            <div class="campo">
+                <label class="campo-texto" for="vacina">Vacina</label>
+                <input class="input-text" type="text" name="vacina" placeholder="Hepatite B">
+            </div>
+            <div class="campo">
+                <label class="campo-texto">Dose</label>
+                <div class="radios">
+                    <input class="input-circulo" type="radio" name="Dose" value="1a. dose" />
+                    <label class="radio-texto" for="Dose">1a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="2a. dose" />
+                    <label class="radio-texto" for="Dose">2a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="3a. dose" />
+                    <label class="radio-texto" for="Dose">3a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="reforço" />
+                    <label class="radio-texto" for="Dose">Reforço</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="dose unica" />
+                    <label class="radio-texto" for="Dose">Dose unica</label>
+                </div>
+            </div>
+            <div class="campo">
+                <label class="campo-texto" for="comprovante">Comprovante de vacina</label>
+                <input class="input-imagem" type="file" placeholder="Selecionar Imagen...">
+                <button class="btn-imagem">Selecionar imagem...</button>
+
+            </div>
+            <div class="campo">
+                <label class="campo-texto" for="dataProxima">Próxima vacinação</label>
+                <input class="input-data" type="date" name="dataProxima">
+
+
+            </div>
+        </form>
+        <div class="btn-cadastrar">
+            <a class="btn-cad" href="Home.html">Salvar Alterações</a>
+        </div>
+    </main>
+
+    <div id="popUp" class="Pagina-popup">
+        <div class="popup">
+            <h2 class="texto-popup">Tem certeza que deseja remover essa vacina?</h2>
+            <div class="bnt-simNao">
+                <a class="btn-sim" href="Home.html">Sim</a>
+                <a class="btn-cancelar" href="Home.html">Cancelar</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

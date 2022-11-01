@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="Style/CriarStyle.css">
+    <link rel="shortcut icon" href="images/icon-vaccine.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="Cabeçalho">
+        <div>
+            <a class="logo-imagem"><img src="images/icon-vaccine.png" alt=""></a>
+            <span>My Health</span>
+        </div>
+    </header>
+
+    <main>
+        <form>
+
+            <div class="campo">
+                <label class="campo-texto">Nome Completo</label>
+                <input class="input-text" type="text" name="Nome" placeholder="Luan Riechi">
+            </div>
+
+            <div class="campo">
+                <label class="campo-texto">Sexo</label>
+                <input class="input-circulo" type="radio" name="sexo" value="masculino" />
+                <label class="radio-texto" for="sexo">Masculino</label>
+                <input class="input-circulo" type="radio" name="sexo" value="feminino" />
+                <label class="radio-texto" for="sexo">Feminino</label>
+            </div>
+
+            <div class="campo">
+                <label class="campo-texto">Data Nascimento</label>
+                <input class="input-data" type="date" name="Data">
+            </div>
+
+            <div class="campo">
+                <label class="campo-texto">E-mail</label>
+                <input class="input-text" type="email" name="Email" placeholder="LuanRiechi@alunos.utfpr.edu.br">
+            </div>
+
+            <div class="campo">
+                <label class="campo-texto">Senha</Label>
+                <input id="senha" class="input-text" type="password" name="password" placeholder="******">
+            </div>
+
+            <div class="campo">
+                <label class="campo-texto">Repetir Senha</label>
+                <input id="validaSenha" class="input-text" type="password" name="password" placeholder="******">
+            </div>
+            <p id="error" class="erro" >Senha nao confere!</p>
+        </form>
+        <a id="btnCadastrar" href="#" class="btn" onclick="validarSenha()">Cadastrar</a>
+    </main>
+
+<script>
+    const validarSenha = () =>{
+
+        let senha = document.getElementById("senha").value
+        let validasenha = document.getElementById("validaSenha").value
+        
+        if(senha != validasenha){
+            document.getElementById("error").style.display="flex"
+        } else{
+            document.getElementById("btnCadastrar").setAttribute("href","Entrar.html")
+        }
+    }
+</script>
+
+
+</body>
+
+</html>

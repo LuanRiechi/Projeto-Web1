@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Averia Libre';
+    src: url("averia-libre.ttf");
+}
+
+* {
+    font-family: 'Averia Libre';
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: #ADD4D0;
+}
+
+.Cabeçalho {
+    background-color: #C1E7E3;
+    width: auto;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-size: 48px;
+    color: #419ED7;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #419ED7;
+    width: 188px;
+    height: 29px;
+    border: 1px solid #419ED7;
+    padding: 10px;
+}
+main {
+    height: 100%;
+}
+.barra-pesquisa{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.barra-pesquisa > input{
+    background-image: url('../images/icon.png');
+    background-repeat: no-repeat;
+    font-size: 30px;
+    width: 95%;
+    border: none;
+}
+
+.barra-pesquisa > input::placeholder{
+    padding: 40px;
+    color: #8B8B8B;
+}
+
+.btn-novaVacina {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-cad {
+    margin-top: 50px;
+    width: 188px;
+    height: 50px;
+    background-color: #49B976;
+    color: #FFFFFF;
+    border: 1px solid #37BD6D;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vacinas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+article{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+article > h2 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #3F92C5;
+    margin-top: 15px;
+}
+
+article > p {
+    background-color: #3F92C5;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+
+article > h3 {
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+article > img {
+    margin: 10px;
+}
+
+article > span{
+    color: #FD7979;
+    font-size: 16px;
+    display: flex;
+    align-self: flex-end;
+    margin: 10px;
+}

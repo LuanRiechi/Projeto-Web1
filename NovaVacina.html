@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Vacina</title>
+    <link rel="stylesheet" href="Style/NovaVacinaStyle.css">
+    <link rel="shortcut icon" href="images/icon-vaccine.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="Cabeçalho">
+        <div>
+            <a class="logo-imagem"><img src="images/icon-vaccine.png" alt=""></a>
+            <span>My Health</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a class="btn" href="Home.html">Minhas vacinas</a></li>
+                <li><a class="btn" href="Index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <div class="campo">
+                <label class="campo-texto" for="data">Data de vascinação</label>
+                <input class="input-data" type="date" name="data">
+            </div>
+
+
+            <div class="campo">
+                <label class="campo-texto" for="vacina">Vacina</label>
+                <input class="input-text" type="text" name="vacina" placeholder="Hebatite B">
+            </div>
+            <div class="campo">
+                <label class="campo-texto">Dose</label>
+                <div class="radios">
+                    <input class="input-circulo" type="radio" name="Dose" value="1a. dose" />
+                    <label class="radio-texto" for="Dose">1a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="2a. dose" />
+                    <label class="radio-texto" for="Dose">2a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="3a. dose" />
+                    <label class="radio-texto" for="Dose">3a. dose</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="reforço" />
+                    <label class="radio-texto" for="Dose">Reforço</label>
+                    <input class="input-circulo" type="radio" name="Dose" value="dose unica" />
+                    <label class="radio-texto" for="Dose">Dose unica</label>
+                </div>
+            </div>
+            <div class="campo">
+                <label class="campo-texto" for="comprovante">Comprovante de vacina</label>
+                <input class="input-imagem" type="file" placeholder="Selecionar Imagen...">
+                <button class="btn-imagem">Selecionar imagem...</button>
+
+            </div>
+            <div class="campo">
+                <label class="campo-texto" for="dataProxima">Próxima vacinação</label>
+                <input class="input-data" type="date" name="dataProxima">
+
+
+            </div>
+        </form>
+        <div class="btn-cadastrar">
+            <a class="btn-cad" href="Home.html">Cadastrar</a>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

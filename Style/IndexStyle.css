@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Averia Libre';
+    src: url("averia-libre.ttf");
+}
+
+* {
+    font-family: 'Averia Libre';
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a {
+    text-decoration: none;
+}
+body{
+    background-color: #829896;
+}
+
+.Cabeçalho {
+    background-color: #8FE1D9;
+    width: auto;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #419ED7;
+    color: white;
+    border: 1px solid #419ED7;
+}
+
+.btn-tenho{
+    padding: 10px;    
+}
+
+.btn-criar{
+    margin-top: 50px;
+    width: 304px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    color: #419ED7;
+}
+
+main {
+    background-image: url('../images/vaccine-background.jpeg');
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 90px);
+}
+
+span {
+    font-size: 48px;
+    color: #419ED7;
+    margin-left: 10px;
+}

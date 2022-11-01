@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Averia Libre';
+    src: url("averia-libre.ttf");
+}
+
+* {
+    font-family: 'Averia Libre';
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: #ADD4D0;
+}
+
+.Cabeçalho {
+    background-color: #C1E7E3;
+    width: auto;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-size: 48px;
+    color: #419ED7;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #419ED7;
+    width: 188px;
+    height: 29px;
+    border: 1px solid #419ED7;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+}
+
+.botaoExcluir {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.btn-excluir {
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: #FD7979;
+    color: #FFFFFF;
+    border: 1px solid #FD7979;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+input::placeholder {
+    color: #3F92C5;
+}
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.campo-texto {
+    white-space: nowrap;
+    text-align: end;
+    margin-right: 20px;
+    width: 400px;
+    height: 43px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.radio-texto {
+    white-space: nowrap;
+    width: 80px;
+    height: 43px;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.input-text {
+    background-color: white;
+    color: #3F92C5;
+    border: none;
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    font-size: 36px;
+}
+
+.input-data {
+    color: #3F92C5;
+    background-color: white;
+    border: none;
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    font-size: 36px;
+}
+
+.input-circulo {
+    width: 32px;
+    border: 3px solid #FFFFFF;
+}
+
+.radios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.input-imagem {
+    display: none;
+}
+
+.btn-imagem {
+    padding: 10px;
+    display: flex;
+    border: none;
+    background-color: #419ED7;
+    color: white;
+    font-size: 20px;
+    width: 400px;
+}
+
+.btn-cadastrar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-cad {
+    margin-top: 50px;
+    width: 188px;
+    height: 50px;
+    background-color: #49B976;
+    color: #FFFFFF;
+    border: 1px solid #37BD6D;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagina-popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: white;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popup>h2 {
+    color: #FD7979;
+    margin-bottom: 40px;
+}
+
+.btn-simNao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-sim {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background-color: #FF8383;
+}
+
+.btn-cancelar {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background-color: #3F92C5;
+}
