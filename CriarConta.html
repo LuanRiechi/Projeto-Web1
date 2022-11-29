@@ -58,19 +58,7 @@
         <a id="btnCadastrar" href="#" class="btn" onclick="validarSenha()">Cadastrar</a>
     </main>
 
-<script>
-    const validarSenha = () =>{
-
-        let senha = document.getElementById("senha").value
-        let validasenha = document.getElementById("validaSenha").value
-        
-        if(senha != validasenha){
-            document.getElementById("error").style.display="flex"
-        } else{
-            document.getElementById("btnCadastrar").setAttribute("href","Entrar.html")
-        }
-    }
-</script>
+<script src="./JavaScript/CriarConta.js" > </script>
 
 
 </body>
