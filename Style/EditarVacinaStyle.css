@@ -63,7 +63,6 @@ main {
     flex-direction: row;
     justify-content: end;
     margin-right: 30px;
-    cursor: pointer;
 }
 
 .btn-excluir {
@@ -77,6 +76,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 form {
