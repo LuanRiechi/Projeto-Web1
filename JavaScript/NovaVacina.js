@@ -9,7 +9,7 @@ var inputFile = null;
 
 auth.onAuthStateChanged(function (user) {
     if (!auth.currentUser) {
-        window.location.href = "./Index.html"
+        window.location.href = "./index.html"
     }
     // else{
     //     const usuarioLogadoID = auth.currentUser.uid

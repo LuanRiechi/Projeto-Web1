@@ -19,6 +19,76 @@ auth.onAuthStateChanged(function (user) {
             document.getElementById("popUp").style.display = "flex"
         })
 
+        document.getElementById("btnImagem").addEventListener('click', () => {
+            inputFile = document.getElementById("ComprovanteFile")
+            inputFile.click()
+        })
+
+        document.getElementById("btnSalvar").addEventListener('click', () => {salvar(id)})
+
+
+        document.getElementById("ComprovanteFile").addEventListener('change', function (event) {
+            file = event.target.files[0]
+        })
+
+        if (id) {
+            let iduser = auth.currentUser.uid
+            getDoc(doc(db, "usuarios/" + iduser + "/vacinas", id))
+
+                .then((documento) => {
+                    setDataVacina(documento.data().DataVacina)
+                    setNomeVacina(documento.data().NomeVacina)
+                    setProximaVacina(documento.data().ProximaVacina)
+                    setPathFoto(documento.data().pathFoto)
+
+                })
+                .catch((error) => {
+                    console.log("Erro ao recuperar o documento: " + error)
+                })
+
+        }
+        
+        const salvar = (id) => {
+            let iduser = auth.currentUser.uid
+
+            if (file) {
+                uploadBytes(ref(storage, getPathFoto()), file)
+                    .then((result) => {
+                        updateDoc(doc(db, "usuarios/" + iduser + "/vacinas", id), {
+                            DataVacina: getDataVacina(),
+                            NomeVacina: getNomeVacina(),
+                            Dose: getDose(),
+                            ProximaVacina: getProximaVacina(),
+                            pathFoto: getPathFoto()
+                        })
+                            .then(() => {
+                                window.location.href = "./Home.html"
+                            })
+                            .catch((error) => {
+                                console.log("Erro ao atualizar o documento: " + error)
+                            })
+                    })
+                    .catch((error) => {
+                        console.log("Erro ao enviar arquivo: " + error)
+                    })
+            } else {
+                updateDoc(doc(db, "usuarios/" + iduser + "/vacinas", id), {
+                    DataVacina: getDataVacina(),
+                    NomeVacina: getNomeVacina(),
+                    Dose: getDose(),
+                    ProximaVacina: getProximaVacina(),
+                })
+                    .then(() => {
+                        window.location.href = "./Home.html"
+                    })
+                    .catch((error) => {
+                        console.log("Erro ao atualizar o documento: " + error)
+                    })
+            }
+
+        }
+
+
         const deslogar = () => {
             signOut(auth)
         
