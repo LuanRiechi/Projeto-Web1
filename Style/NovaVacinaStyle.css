@@ -152,6 +152,7 @@ input::placeholder {
 }
 
 .input-imagem {
+    /* display: flex; */
     display: none;
 }
 
@@ -163,4 +164,5 @@ input::placeholder {
     color: white;
     font-size: 20px;
     width: 400px;
+    cursor: pointer;
 }
