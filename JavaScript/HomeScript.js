@@ -11,6 +11,10 @@ auth.onAuthStateChanged( function(user) {
 
     } else{
 
+        document.getElementById("txtPesquisa").addEventListener('keyup', () => {
+            const searchString = document.getElementById("txtPesquisa").value.trim()
+            showCardsVacinas(listaVacinas.filter(vacina => vacina.nome.includes(searchString)))
+        })
 
         const carregarVacinas = () => {
 
