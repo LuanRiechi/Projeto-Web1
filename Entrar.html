@@ -23,19 +23,25 @@
 
             <div>
                 <label>E-mail</label>
-                <input type="email" name="Email" placeholder="LuanRiechi@alunos.utfpr.edu.br">
+                <input id="email" type="email" name="Email" placeholder="LuanRiechi@alunos.utfpr.edu.br">
             </div>
 
             <div>
                 <Label>Senha</Label>
-                <input type="password" name="password" placeholder="******">
+                <input id="senha" type="password" name="password" placeholder="******">
+            </div>
+
+            <div>
+                <span id="lblAviso" class="erro" ></span>
             </div>
         </form>
 
-        <a href="Home.html" class="btn">Entrar</a>
+        <a id="btnEntrar" href="#" class="btn">Entrar</a>
 
         <a href="RecuperarSenha.html" class="link">Esqueci minha senha</a>
     </main>
+
+    <script type="module" src="./JavaScript/Entrar.js" ></script>
 
 </body>
 

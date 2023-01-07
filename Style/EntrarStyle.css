@@ -85,3 +85,10 @@ input::placeholder {
     font-size: 24px;
     color: #419ED7;
 }
+
+.erro{
+    font-size: 48px;
+    justify-content: center;
+    color: #FD7979;
+    padding: 10px;
+}

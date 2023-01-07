@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,18 +19,18 @@
         <nav>
             <ul class="menu">
                 <li><a class="btn" href="Home.html">Minhas vacinas</a></li>
-                <li><a class="btn" href="Index.html">Logout</a></li>
+                <li><a id="btnDeslogar" class="btn" href="#">Logout</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="barra-pesquisa">
-            <input type="text" name="pesquisa" placeholder= "PESQUISAR VACINA...">
+            <input id="txtPesquisa" type="text" name="pesquisa" placeholder="PESQUISAR VACINA...">
         </div>
 
         <section id="listaVacinas" class="vacinas">
-            
+
 
         </section>
 
@@ -40,7 +41,8 @@
 
     </main>
 
-<script src="./JavaScript/HomeScript.js"></script>
+    <script type="module" src="./JavaScript/HomeScript.js"></script>
 
 </body>
+
 </html>

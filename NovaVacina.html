@@ -20,7 +20,7 @@
         <nav>
             <ul class="menu">
                 <li><a class="btn" href="Home.html">Minhas vacinas</a></li>
-                <li><a class="btn" href="Index.html">Logout</a></li>
+                <li><a id="btnDeslogar" class="btn" href="#">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -29,13 +29,13 @@
         <form>
             <div class="campo">
                 <label class="campo-texto" for="data">Data de vascinação</label>
-                <input class="input-data" type="date" name="data">
+                <input id="dataVacina" class="input-data" type="date" name="data">
             </div>
 
 
             <div class="campo">
                 <label class="campo-texto" for="vacina">Vacina</label>
-                <input class="input-text" type="text" name="vacina" placeholder="Hebatite B">
+                <input id="nomeVacina" class="input-text" type="text" name="vacina" placeholder="Hebatite B">
             </div>
             <div class="campo">
                 <label class="campo-texto">Dose</label>
@@ -54,21 +54,26 @@
             </div>
             <div class="campo">
                 <label class="campo-texto" for="comprovante">Comprovante de vacina</label>
-                <input class="input-imagem" type="file" placeholder="Selecionar Imagen...">
-                <button class="btn-imagem">Selecionar imagem...</button>
+                <input id="ComprovanteFile" class="input-imagem" type="file" placeholder="Selecionar Imagen...">
+                <div id="btnImagem" class="btn-imagem">
+                    <p>Selecionar imagem...</p>
+                </div>
+
 
             </div>
             <div class="campo">
                 <label class="campo-texto" for="dataProxima">Próxima vacinação</label>
-                <input class="input-data" type="date" name="dataProxima">
+                <input id="ProximaVacina" class="input-data" type="date" name="dataProxima">
 
 
             </div>
         </form>
         <div class="btn-cadastrar">
-            <a class="btn-cad" href="Home.html">Cadastrar</a>
+            <a id="btnCadastrar" class="btn-cad" href="#">Cadastrar</a>
         </div>
     </main>
+
+    <script type="module" src="./JavaScript/NovaVacina.js" ></script>
 
 
 </body>
