@@ -23,7 +23,7 @@
 
             <div class="campo">
                 <label class="campo-texto">Nome Completo</label>
-                <input class="input-text" type="text" name="Nome" placeholder="Luan Riechi">
+                <input id="nome" class="input-text" type="text" name="Nome" placeholder="Luan Riechi">
             </div>
 
             <div class="campo">
@@ -36,12 +36,13 @@
 
             <div class="campo">
                 <label class="campo-texto">Data Nascimento</label>
-                <input class="input-data" type="date" name="Data">
+                <input id="data" class="input-data" type="date" name="Data">
             </div>
 
             <div class="campo">
                 <label class="campo-texto">E-mail</label>
-                <input class="input-text" type="email" name="Email" placeholder="LuanRiechi@alunos.utfpr.edu.br">
+                <input id="email" class="input-text" type="email" name="Email"
+                    placeholder="LuanRiechi@alunos.utfpr.edu.br">
             </div>
 
             <div class="campo">
@@ -53,13 +54,13 @@
                 <label class="campo-texto">Repetir Senha</label>
                 <input id="validaSenha" class="input-text" type="password" name="password" placeholder="******">
             </div>
-            <p id="error" class="erro" >Senha nao confere!</p>
+            <p id="error" class="erro">Senha nao confere!</p>
         </form>
-        <a id="btnCadastrar" href="#" class="btn" onclick="validarSenha()">Cadastrar</a>
+        <a id="btnCadastrar" href="#" class="btn">Cadastrar</a>
     </main>
 
-<script src="./JavaScript/CriarConta.js" > </script>
-
+    <script type="module" src="./JavaScript/CriarConta.js">
+    </script>
 
 </body>
 
