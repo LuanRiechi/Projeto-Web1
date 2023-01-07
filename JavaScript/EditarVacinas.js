@@ -25,7 +25,7 @@ auth.onAuthStateChanged(function (user) {
         })
 
         document.getElementById("btnSalvar").addEventListener('click', () => {salvar(id)})
-
+        document.getElementById("btnConfirmaExclu").addEventListener('click', () => {excluir(id)})
 
         document.getElementById("ComprovanteFile").addEventListener('change', function (event) {
             file = event.target.files[0]
@@ -88,7 +88,24 @@ auth.onAuthStateChanged(function (user) {
 
         }
 
+        const excluir = (id) => {
+            let iduser = auth.currentUser.uid
+            deleteObject(ref(storage, getPathFoto()))
+            .then(() => {
+                deleteDoc(doc(db, "usuarios/" + iduser + "/vacinas", id))
+                .then(() => {
+                    window.location.href = "./Home.html"
+                })
+                .catch((error) => {
+                    console.log("Erro ao excluir documento: " + error)
+                })
+            })
+            .catch((error) => {
+                console.log("Erro ao excluir o arquivo.")
+            })
 
+
+        }
         const deslogar = () => {
             signOut(auth)
         
