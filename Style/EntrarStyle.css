@@ -92,3 +92,7 @@ input::placeholder {
     color: #FD7979;
     padding: 10px;
 }
+
+div#divLogo{
+    cursor: pointer;
+}

@@ -12,7 +12,7 @@
 
 <body>
     <header class="Cabeçalho">
-        <div>
+        <div id="divLogo">
             <a class="logo-imagem"><img src="images/icon-vaccine.png" alt=""></a>
             <span>My Health</span>
         </div>
@@ -28,7 +28,7 @@
 
             <div class="campo">
                 <label class="campo-texto">Sexo</label>
-                <input class="input-circulo" type="radio" name="sexo" value="masculino" />
+                <input class="input-circulo" type="radio" name="sexo" value="masculino" checked />
                 <label class="radio-texto" for="sexo">Masculino</label>
                 <input class="input-circulo" type="radio" name="sexo" value="feminino" />
                 <label class="radio-texto" for="sexo">Feminino</label>
@@ -41,8 +41,7 @@
 
             <div class="campo">
                 <label class="campo-texto">E-mail</label>
-                <input id="email" class="input-text" type="email" name="Email"
-                    placeholder="LuanRiechi@alunos.utfpr.edu.br">
+                <input id="email" class="input-text" type="email" name="Email" placeholder="LuanRiechi@alunos.utfpr.edu.br">
             </div>
 
             <div class="campo">
@@ -54,7 +53,7 @@
                 <label class="campo-texto">Repetir Senha</label>
                 <input id="validaSenha" class="input-text" type="password" name="password" placeholder="******">
             </div>
-            <p id="error" class="erro">Senha nao confere!</p>
+            <p id="error" class="erro"></p>
         </form>
         <a id="btnCadastrar" href="#" class="btn">Cadastrar</a>
     </main>

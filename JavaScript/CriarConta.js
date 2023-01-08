@@ -13,7 +13,7 @@ const validarSenha = () => {
     let validasenha = document.getElementById("validaSenha").value
 
     if (senha != validasenha) {
-        document.getElementById("error").style.display = "flex"
+        document.getElementById("error").innerHTML = "Senha nao confere!"
     } else {
 
         createUserWithEmailAndPassword(auth, email, senha)
@@ -36,10 +36,14 @@ const validarSenha = () => {
             })
             .catch((error) => {
                 console.log(error.message)
-                console.log("esta caindo aqui!!!!!!")
+                document.getElementById("error").innerHTML = "Digite um email e senha valido"
             })
 
     }
 }
 
 document.getElementById("btnCadastrar").addEventListener('click', validarSenha)
+
+document.getElementById("divLogo").addEventListener('click', () => {
+    window.location.href = "index.html"
+})

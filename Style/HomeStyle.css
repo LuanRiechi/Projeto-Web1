@@ -132,6 +132,8 @@ article > h3 {
 }
 article > img {
     margin: 10px;
+    width: 300px;
+    height: 150px;
 }
 
 article > span{

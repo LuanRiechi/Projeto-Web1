@@ -23,3 +23,7 @@ const autenticarUsuario = () => {
 }
 
 document.getElementById("btnEntrar").addEventListener('click', autenticarUsuario)
+
+document.getElementById("divLogo").addEventListener('click', () => {
+    window.location.href = "index.html"
+})

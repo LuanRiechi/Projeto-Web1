@@ -16,4 +16,8 @@ import { sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.14.
                 console.log('Erro ao solicitar reset de senha')
             })
     }
-document.getElementById("btnRec").addEventListener('click', recuperarSenha)    
+document.getElementById("btnRec").addEventListener('click', recuperarSenha)
+
+document.getElementById("divLogo").addEventListener('click', () => {
+    window.location.href = "index.html"
+})

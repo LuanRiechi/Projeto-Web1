@@ -78,3 +78,7 @@ input {
 input::placeholder {
     color: #3F92C5;
 }
+
+div#divLogo{
+    cursor: pointer;
+}

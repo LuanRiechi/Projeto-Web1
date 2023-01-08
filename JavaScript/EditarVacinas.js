@@ -38,6 +38,7 @@ auth.onAuthStateChanged(function (user) {
                 .then((documento) => {
                     setDataVacina(documento.data().DataVacina)
                     setNomeVacina(documento.data().NomeVacina)
+                    setDoseVacina(documento.data().Dose)
                     setProximaVacina(documento.data().ProximaVacina)
                     setPathFoto(documento.data().pathFoto)
 
@@ -148,6 +149,16 @@ const setDataVacina = (data) => {
 
 const setNomeVacina = (nome) => {
     document.getElementById("nomeVacina").value = nome
+}
+
+const setDoseVacina = (dose) => {
+    var radio = document.getElementsByName("Dose");
+    var Dose = dose;
+    for (var i = 0; i< radio.length; i++){
+        if (radio[i].value == Dose){
+            radio[i].checked = true;
+        }
+    }
 }
 
 

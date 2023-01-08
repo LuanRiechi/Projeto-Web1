@@ -116,7 +116,11 @@ input::placeholder {
     margin-left: 250px;
     font-size: 20px;
     justify-content: center;
-    display: none;
+    /* display: none; */
     color: #FD7979;
     padding: 10px;
+}
+
+div#divLogo{
+    cursor: pointer;
 }
