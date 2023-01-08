@@ -1,5 +1,6 @@
 # Projeto-Web1
 O sistema é uma carteira de vacinação digital para controlar as vacinas recebidas, incluindo a imagem do comprovante vacinal bem como as datas das próximas doses.
+Sistema desenvolvildo em HTML CSS e JavaScript, utilizando o Firebase para a persistência de dados.
 
 # Os requisitos desta aplicação são:
 
